@@ -26,7 +26,7 @@ public class ParenthesesBenchmark {
                 .measurementIterations(5)
                 .timeUnit(TimeUnit.MILLISECONDS)
                 .mode(Mode.AverageTime)
-                .forks(3)
+                .forks(5)
                 .resultFormat(ResultFormatType.CSV)
                 .param("size", IntStream.rangeClosed(0,29).map(i -> 100 + i*100).mapToObj(String::valueOf).toArray(String[]::new))
                 .build();

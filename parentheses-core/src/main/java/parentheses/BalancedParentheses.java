@@ -108,7 +108,7 @@ public class BalancedParentheses {
 
             V value = cache.get(index);
             if (Objects.equals(value, NO_VALUE)) {
-                System.out.println("Value not found in cache for index: " + index);
+                //System.out.println("Value not found in cache for index: " + index);
                 value = mappingFunction.apply(index);
                 cache.set(index, value);
             }
