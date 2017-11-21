@@ -1,0 +1,21 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99,9%)","Unit","Param: size"
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"0,697424",NaN,"ms/op",100
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"2,902599",NaN,"ms/op",200
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"8,321386",NaN,"ms/op",300
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"18,069920",NaN,"ms/op",400
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"34,963423",NaN,"ms/op",500
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"56,585726",NaN,"ms/op",600
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"89,079959",NaN,"ms/op",700
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"167,051720",NaN,"ms/op",800
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"188,606369",NaN,"ms/op",900
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"267,066649",NaN,"ms/op",1000
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"447,089570",NaN,"ms/op",1100
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"515,427714",NaN,"ms/op",1200
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"768,287288",NaN,"ms/op",1300
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"820,255014",NaN,"ms/op",1400
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"1070,175210",NaN,"ms/op",1500
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"1311,663469",NaN,"ms/op",1600
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"1655,027878",NaN,"ms/op",1700
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"1932,983670",NaN,"ms/op",1800
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"2367,179220",NaN,"ms/op",1900
+"benchmark.ParenthesesBenchmark.testMethod","avgt",1,2,"2809,584574",NaN,"ms/op",2000
