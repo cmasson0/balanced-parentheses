@@ -43,7 +43,7 @@ public class BalancedParentheses {
         // For each loop, the CatalanNumber object keeps all the intermediate solutions in the cache, that are reused in the next iteration.
         // Computing the CatalanNumber in several steps adds very little overhead, and does not create redundant operations.
         // Note that the stack overflow error occurs much earlier due to the use of the Stream API in the recursion.
-        int n = 0;
+        int n = 500;
         while (n < numberOfPairsOfParentheses) {
             cn.compute(Math.min(n, numberOfPairsOfParentheses));
             n += 500;

@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 public class ParenthesesBenchmark {
 
     @Param("100")
-    private String size;
+    private String numberOfPairsOfParentheses;
 
     public static void main(String... args) throws IOException, RunnerException {
         Options opt = new OptionsBuilder()
@@ -28,14 +28,14 @@ public class ParenthesesBenchmark {
                 .mode(Mode.AverageTime)
                 .forks(5)
                 .resultFormat(ResultFormatType.CSV)
-                .param("size", IntStream.rangeClosed(0,29).map(i -> 100 + i*100).mapToObj(String::valueOf).toArray(String[]::new))
+                .param("numberOfPairsOfParentheses", IntStream.rangeClosed(0,29).map(i -> 100 + i*100).mapToObj(String::valueOf).toArray(String[]::new))
                 .build();
         new Runner(opt).run();
     }
 
     @Benchmark
-    public void testMethod(Blackhole bh) {
-        bh.consume(BalancedParentheses.numberOfBalancedStrings(Integer.valueOf(size)));
+    public void benchmarkNumberOfBalancedStrings(Blackhole bh) {
+        bh.consume(BalancedParentheses.numberOfBalancedStrings(Integer.valueOf(numberOfPairsOfParentheses)));
     }
 
 
