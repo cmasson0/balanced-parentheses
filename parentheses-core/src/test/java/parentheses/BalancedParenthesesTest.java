@@ -52,11 +52,6 @@ class BalancedParenthesesTest {
     }
 
     @Test
-    void numberOfSolutionsForSmallString() {
-        System.out.println(BalancedParentheses.numberOfBalancedStrings(7).intValue());
-    }
-
-    @Test
     void numberOfSolutionsForSmallStrings() {
         for(int problemSize = 0; problemSize < SOLUTIONS.size(); problemSize++) {
             assertEquals(SOLUTIONS.get(problemSize).intValue(), BalancedParentheses.numberOfBalancedStrings(problemSize).intValue(), "Incorrect number of solutions for problemSize: " + problemSize);
