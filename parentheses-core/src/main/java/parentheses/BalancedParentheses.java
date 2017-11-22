@@ -15,6 +15,16 @@ public class BalancedParentheses {
     //~ Methods
     //~ ----------------------------------------------------------------------------------------------------------------
 
+    /**
+     * Check whether the expression is balanced in terms of parentheses.
+     * Examples:
+     *      - "()(())" is balanced
+     *      - "(()))" is unbalanced.
+     * @param s
+     *          The expression to be checked
+     * @return
+     *          True if s is balanced. False otherwise.
+     */
     static boolean isBalanced(String s) {
         int count = 0;
         for (char c : s.toCharArray()) {
@@ -30,8 +40,13 @@ public class BalancedParentheses {
         return count == 0;
     }
 
-    /*
-     * Answer to the problem: "Count the number of expressions containing n pairs of parentheses which are correctly matched".
+    /**
+     * Answer to the problem: "Count the number of expressions containing n pairs of parentheses which are correctly matched". The complexity should be O(n²).
+     *
+     * @param numberOfPairsOfParentheses
+     *          The number of pairs of parentheses in the expression. We assume the sequence does not contain any other characters than the parentheses.
+     * @return
+     *          Return the number of possible distinct expressions that contains n pairs of parentheses which are correctly matched.
      */
     public static BigInteger numberOfBalancedStrings(int numberOfPairsOfParentheses) {
         if(numberOfPairsOfParentheses <0)
